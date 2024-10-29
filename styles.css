@@ -1,0 +1,84 @@
+body {
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Arial", sans-serif; /* Mudança de fonte */
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px purple; /* Cor roxa */
+    padding: 20px;
+    font-size: 32px;
+    color: purple; /* Cor roxa */
+    transition: color 0.3s; /* Animação na mudança de cor */
+}
+
+header:hover {
+    color: white; /* Muda a cor do texto ao passar o mouse */
+}
+
+.chamada {
+    background: purple; /* Cor de fundo roxa */
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s; /* Animação de entrada */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.chamada-texto {
+    margin-right: 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+}
+
+p {
+    font-size: 20px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.categoria {
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.categoria-videos img {
+    opacity: 0.7;
+    height: 200px;
+    transition: transform 0.3s; /* Animação de transformação */
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid purple; /* Borda roxa ao passar o mouse */
+    transform: scale(1.1); /* Aumento da imagem ao passar o mouse */
+}
+
+.categoria h2 {
+    color: purple; /* Cor roxa */
+    text-align: center; /* Centraliza o título */
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Cor branca para links */
+    transition: color 0.3s; /* Animação na mudança de cor dos links */
+}
+
+a:hover {
+    color: purple; /* Muda para roxo ao passar o mouse */
+}
